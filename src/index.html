@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Particles v1</title>
+	<style type="text/css">
+		.html, body, input {
+			margin: 0;
+			padding: 0;
+			font-size: 12px;
+		}
+		h3 { padding:0px; margin:0px; }
+		#canvas { border:1px solid gray; margin:20px; }
+		td div { width: 100px;margin-left:20px; }
+	</style>
+<script type="text/javascript" src="functions.js"></script>
+<script type="text/javascript" src="neuralnet.js"></script>
+
+<script type="text/javascript" src="particle.js"></script>
+<script type="text/javascript" src="vector2d.js"></script>
+<script type="text/javascript" src="object.js"></script>
+<script>
+
+</script>
+</head>
+<body>
+	<h3>Neural Net Particles</h3>
+	<table>
+	 <tr>
+	   <td valign="top">
+		<canvas id="canvas"/>
+	   </td>
+	 </tr>
+	 <tr>
+	   <td>
+		<div id="cycles" style="display:inline-block;"></div>
+		<div id="dispWorstHealth" style="display:inline-block;"></div>
+		<div id="dispBestHealth" style="display:inline-block;"></div>
+		<div id="mutRate" style="display:inline-block;"></div>
+		<div id="genCount" style="display:inline-block;"></div>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+<script type="text/javascript" src="main.js"></script>
