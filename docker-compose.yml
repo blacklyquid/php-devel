@@ -1,14 +1,16 @@
 version: '2'
 services:
     web:
-        build: .
+        build:
+            context: .
+            dockerfile: ./php/dockerfile
         ports:
             - 80:80
         restart: always
         volumes:
             - web_data:/var/www/html/
     editor
-        buid: .
+        image: filebrowser/filebrowser
         ports:
             - 8080:80
         volumes:
