@@ -1,0 +1,17 @@
+version: '2'
+services:
+    web:
+        build: .
+        ports:
+            - 80:80
+        restart: always
+        volumes:
+            - web_data:/var/www/html/
+    editor
+        buid: .
+        ports:
+            - 8080:80
+        volumes:
+            - web_data:/srv
+volumes:
+    web_data:
