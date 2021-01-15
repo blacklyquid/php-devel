@@ -9,7 +9,7 @@ services:
         restart: always
         volumes:
             - web_data:/var/www/html/
-    editor
+    editor:
         image: filebrowser/filebrowser
         ports:
             - 8080:80
