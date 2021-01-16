@@ -6,7 +6,7 @@ services:
             - 80:80
         restart: always
         volumes:
-            - php_filebrowser_php:/var/www/html/
+            - php_filebrowser:/var/www/html/
     dev:
         image: filebrowser/filebrowser
         ports:
@@ -15,4 +15,4 @@ services:
         volumes:
             - php_filebrowser:/srv
 volumes:
-    triangles_data:
+    php_filebrowser:
