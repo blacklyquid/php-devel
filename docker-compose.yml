@@ -1,0 +1,18 @@
+version: '2'
+services:
+    php:
+        build: .
+        ports:
+            - 80:80
+        restart: always
+        volumes:
+            - php_filebrowser_php:/var/www/html/
+    dev:
+        image: filebrowser/filebrowser
+        ports:
+            - 8081:80
+        restart: always
+        volumes:
+            - php_filebrowser:/srv
+volumes:
+    triangles_data:
